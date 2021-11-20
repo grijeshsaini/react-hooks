@@ -1,4 +1,4 @@
-import { useState } from "react"
+import {useState} from "react"
 import {FaStar} from "react-icons/fa";
 
 type Selected = {
@@ -30,7 +30,7 @@ const StarRating = ({totalStars = 5}: Stars) => {
             <p>{selectedStars} of {totalStars}</p>
         </>
     )
-    
+
 }
 
 export const ExampleUseState = () => {
@@ -46,15 +46,16 @@ export const ExampleUseState = () => {
 
             <div>
                 <h3>Example 2 - Click button to change checkbox state</h3>
-                <input type="checkbox" value={checked} onChange={() => setChecked(checked === "checked" ? "notchecked" : "checked")}/>
+                <input type="checkbox" value={checked}
+                       onChange={() => setChecked(checked === "checked" ? "notchecked" : "checked")}/>
                 <p>{checked === "checked" ? "Not Checked" : "Checked"}</p>
             </div>
 
             <div>
                 <h3>Example 3 - Start Rating</h3>
-                <StarRating totalStars={5}/>            
+                <StarRating totalStars={5}/>
             </div>
-            
+
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import {useEffect, useState} from "react"
 
 interface Users {
     id: number,
@@ -23,8 +23,8 @@ export const ExampleUseEffect = () => {
 
     useEffect(() => {
         fetch(`https://api.github.com/users`)
-        .then((response) => response.json())
-        .then(setUsers)
+            .then((response) => response.json())
+            .then(setUsers)
     }, []);
 
     if (!users) {
@@ -49,8 +49,8 @@ export const ExampleUseEffect = () => {
                         <li key={user.id}>{user.login}</li>
                     ))
                 }
-             </ul>
+            </ul>
         </section>
     )
-    
+
 }
