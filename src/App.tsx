@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ExampleUseEffect } from './Hooks/ExampleUseEffect';
+import { ExampleUseReducer } from './Hooks/ExampleUseReducer';
+import { ExampleUseState } from './Hooks/ExampleUseState';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>Use State.......</h1>
+        <ExampleUseState/>
+        <h1>Use Effect.......</h1>
+        <ExampleUseEffect/>
+        <h1>Use Reducer.......</h1>
+        <ExampleUseReducer/>
     </div>
   );
 }
